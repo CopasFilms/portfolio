@@ -16,8 +16,10 @@ import Contact from "./pages/homePage/contact/Contact";
 function App() {
   const [loading, setLoading] = useState(true);
 
+  const basename = process.env.REACT_APP_NODE_ENV === "production" ? "/portfolio" : "/";
+
   return (
-    <Router basename="/">
+    <Router basename={basename}>
       <LanguageProvider>
         {loading ? (
           <LoadingHome onFinish={() => setLoading(false)} />
