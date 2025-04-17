@@ -1,0 +1,11 @@
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background-color: var(--background-primary);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

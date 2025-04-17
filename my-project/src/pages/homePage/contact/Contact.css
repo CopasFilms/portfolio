@@ -1,0 +1,220 @@
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.header-contact {
+    align-self:center;
+}
+
+.titleHeader-contact {
+    font-size: 28px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: var(--color-primary);
+}
+
+.divider-contact {
+    width: 130px;
+    margin: 0 auto;
+}
+
+.panel-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.left-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin-top: -50px;
+}
+
+.text-logo-contact {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+}
+
+.panel-info-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-info-contact {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: var(--color-secondary);
+    font-family: 'Roboto', sans-serif;
+}
+
+.redeSocial-contact {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.right-contact {
+    margin-top: 25px;
+}
+
+.copy-button-contact {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: var(--color-secondary);
+    border: 1px solid;
+    border-color: var(--color-secondary);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: -5px;
+}
+  
+.copy-button-contact:hover {
+    background-color: var(--color-secondary);
+    color: var(--background-primary);
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 300px;
+    background-color: var(--background-form);
+    border: solid 4px;
+    border-color: var(--color-primary);
+    margin-top: 20px;
+}
+
+.title-form {
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.contact-form button {
+    background-color: transparent;
+    color: var(--color-primary);
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: 2px solid;
+    border-color: var(--color-primary);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 50px;
+}
+  
+.contact-form button:hover {
+    background-color: var(--color-primary);
+    color: var(--background-primary);
+}
+
+.contact-form button:active {
+    background-color: var(--color-primary);
+    color: var(--background-primary);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+  
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 14px 0px 6px 0px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid var(--color-secondary);
+    background-color: transparent;
+    color: var(--color-primary);
+    outline: none;
+    transition: border-color 0.3s;
+    border-radius: 0;
+}
+  
+.input-group textarea {
+    min-height: 80px;
+    resize: vertical;
+    line-height: 1.4;
+}
+  
+.input-group label {
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    font-size: 1rem;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 0px;
+    font-size: 0.75rem;
+    color: var(--color-primary);
+    background-color: var(--background-form);
+    padding: 0 4px;
+    z-index: 1;
+}
+
+.input-group input:focus,
+.input-group input:not(:placeholder-shown),
+.input-group textarea:focus,
+.input-group textarea:not(:placeholder-shown) {
+  border-bottom-color: var(--color-primary);
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+  
+.send-status {
+    color: var(--color-secondary);
+    font-size: 0.9rem;
+    text-align: center;
+}
+  
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.footer-contact p {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

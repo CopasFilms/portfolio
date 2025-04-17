@@ -1,0 +1,39 @@
+.panel-animated-wrapper {
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--color-primary);
+    padding: 15px 0;
+    position: relative;
+    /* z-index: 999; */
+    margin: 20px 0px 20px 0px;
+}
+  
+.panel-animated-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-horizontal linear infinite;
+}
+  
+.item-panelAnimated {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 800;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    padding-right: 15px;
+}
+  
+.item-panelAnimated img {
+    width: 20px;
+    height: 20px;
+}
+  
+@keyframes scroll-horizontal {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-33.33%);
+    }
+}

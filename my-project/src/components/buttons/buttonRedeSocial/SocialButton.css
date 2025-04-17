@@ -1,0 +1,15 @@
+.social-btn {
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.social-btn img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.social-btn :hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,26 @@
+/* Espaço para variaveis de cores */
+
+:root {
+    /* Plano de Fundo */
+    --background-header: #000000;
+    --background-primary: #101010;
+    --background-panelVlogs: #FFFFFF;
+
+    /* Cores */
+    --color-panelVlogs: #000000;
+    --color-primary: #FFFFFF;
+    --color-primary-hover: #d8d8d8;
+    --color-secondary: #A4A4A4;
+    --color-third: #000;
+
+    /* Degrade elementos */
+    --color-element-0: rgba(255, 0, 0, 0.65);
+    --color-element-50: #FF9D00;
+    --color-element-100: #FFD900;
+
+    /* Botões */
+    --color-button-header: #FFFFFF;
+    
+
+
+}
