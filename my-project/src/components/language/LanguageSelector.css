@@ -49,8 +49,15 @@
 .dropdown-item:hover {
     background: #6e6e6e;
 }
-  
+
 .dropdown-item img {
     width: 20px;
     height: 14px;
-} 
+}
+
+@media (max-width: 768px) {
+
+    .dropdown-menu {
+        z-index: 5;
+    }
+}

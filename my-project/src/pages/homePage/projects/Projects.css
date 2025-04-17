@@ -167,8 +167,13 @@
 }
 
 @media (max-width: 768px) {
+
+  .section-projects { 
+    margin-top: 50px;
+  }
+
   .titleHeader-projects {
-    font-size: 22px;
+    font-size: 28px;
     text-align: center;
   }
 
