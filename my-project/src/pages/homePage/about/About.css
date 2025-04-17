@@ -102,3 +102,52 @@
     font-weight: 600;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    
+    .panel-about {
+        gap: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .left-about {
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 340px;
+        margin-top: 20px;
+    }
+    
+    .right-about {
+        margin-top: 25px;
+    }
+    
+    .panel-statistic-about {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    
+    .card-statistic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 0;
+        padding: 5px 6px;
+        border-radius: 12px;
+        width: 92px;
+        height: 80px;
+    }
+    
+    .value-statistic {
+        font-size: 28px;
+    }
+    
+    .text-statistic {
+        font-size: 14px;
+        margin: 0px;
+    }
+}

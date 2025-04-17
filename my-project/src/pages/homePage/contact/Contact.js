@@ -137,7 +137,6 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="footer-contact">
-                    <Divider margin={'0px'} width={'10%'} color={'var(--color-secondary)'} />
                     <p>{texts.TitlePage_Footer}</p>
                 </div>
             </div>

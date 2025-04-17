@@ -94,3 +94,14 @@
     cursor: pointer;
     z-index: 10000;
 }
+
+@media (max-width: 768px) {
+
+    .video-thumbnail {
+        max-width: 350px;
+    }
+
+    .DescriptionVideo-spotlightProject {
+        font-size: 15px;
+    }
+}

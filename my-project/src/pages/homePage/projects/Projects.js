@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Projects.css';
 import Divider from '../../../components/divider/Divider';
 import useTexts from '../../../hooks/useTexts';
@@ -13,6 +13,7 @@ const Projects = () => {
   const [showAll, setShowAll] = useState(false);
   const [modalVideo, setModalVideo] = useState(null);
   const [isVertical, setIsVertical] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const videoRef = useRef(null);
 
   const videoData = [
@@ -24,6 +25,14 @@ const Projects = () => {
     { src: clipe02, title: texts.TitleVideoClip_Edit_Projects },
   ];
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const openModal = (video) => {
     const tempVideo = document.createElement('video');
     tempVideo.src = video;
@@ -32,7 +41,6 @@ const Projects = () => {
       const { videoWidth, videoHeight } = tempVideo;
       setIsVertical(videoHeight > videoWidth);
       setModalVideo(video);
-
       document.body.style.overflow = 'hidden';
       document.documentElement.style.overflow = 'hidden';
     };
@@ -41,18 +49,16 @@ const Projects = () => {
   const closeModal = () => {
     setModalVideo(null);
     setIsVertical(false);
-
     document.body.style.overflow = '';
     document.documentElement.style.overflow = '';
-
     if (videoRef.current) {
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
     }
   };
 
-  const firstVideos = videoData.slice(0, 4);
-  const extraVideos = videoData.slice(4);
+  const firstVideos = isMobile ? videoData.slice(0, 3) : videoData.slice(0, 4);
+  const extraVideos = videoData.slice(firstVideos.length);
 
   return (
     <section id="projects">

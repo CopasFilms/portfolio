@@ -44,3 +44,12 @@
     -webkit-background-clip: initial;
     background-image: none;
 }
+
+@media (max-width: 768px) {
+
+    .button-contactMe {
+        padding: 5px 13px;
+        font-size: 21px;
+        font-weight: 600;
+    }
+}

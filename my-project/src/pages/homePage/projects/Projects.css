@@ -32,7 +32,6 @@
 .view-all-button-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
   position: relative;
   left: 365px;
 }
@@ -55,6 +54,7 @@
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .video-card {
@@ -94,7 +94,7 @@
 }
 
 .video-title {
-  margin-top: 6px;
+  margin-top: 10px;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
@@ -148,4 +148,84 @@
   color: white;
   cursor: pointer;
   z-index: 10000;
+}
+
+@media (max-width: 1024px) {
+  .view-all-button-container {
+    left: 0;
+    justify-content: center;
+  }
+
+  .video-card {
+    width: 180px;
+    height: 260px;
+  }
+
+  .video-preview {
+    height: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleHeader-projects {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .view-all-button-container {
+    position: static;
+    justify-content: center;
+    margin-left: 220px;
+  }
+
+  .video-grid {
+    gap: 10px;
+  }
+
+  .video-card {
+    width: 150px;
+    height: 220px;
+  }
+
+  .video-preview {
+    height: 190px;
+  }
+
+  .video-title {
+    font-size: 12px;
+  }
+
+  .modal-horizontal {
+    width: 95%;
+  }
+
+  .modal-vertical {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-card {
+    width: 108px;
+    height: 170px;
+  }
+
+  .video-preview {
+    height: 140px;
+  }
+
+  .video-title {
+    font-size: 10px;
+  }
+
+  .play-overlay {
+    font-size: 24px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .close-button {
+    top: 0;
+    right: 6px;
+  }
 }

@@ -61,12 +61,17 @@ ul {
 /* Estilos para Mobile */
 @media (max-width: 768px) {
     .header {
-        background-color: var(--color-primary);
         margin-top: 0px;
+    }
+
+    .header-logo {
+        margin-left: 20px;
     }
 
     .menu-toggle {
         display: block;
+        margin-right: 10px;
+        color: var(--color-primary);
     }
 
     /* Menu dropdown animado */
@@ -75,7 +80,7 @@ ul {
         top: 55px;
         right: 0px;
         width: 135px;
-        background-color: #614a46;
+        background-color: #202020;
         overflow: hidden;
         opacity: 0;
         transform: scaleY(0);
@@ -86,6 +91,7 @@ ul {
     .header-nav.open {
         opacity: 1;
         transform: scaleY(1);
+        margin-top: 5px;
     }
 
     .header-nav ul {
