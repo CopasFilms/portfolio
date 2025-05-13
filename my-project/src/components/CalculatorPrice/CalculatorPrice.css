@@ -1,0 +1,146 @@
+.calculator-price {
+    background: #1e1e1e;
+    color: white;
+    padding: 30px;
+    max-width: 300px;
+    min-width: 250px;
+    margin: 10px auto;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-price h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.calculator-price label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.calculator-price input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #2c2c2c;
+    color: white;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.calculator-price select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #2c2c2c;
+    color: white;
+    border: 1px solid transparent;
+    outline: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='white' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M10 12a1 1 0 01-.7-.3l-5-5a1 1 0 011.4-1.4L10 9.6l4.3-4.3a1 1 0 011.4 1.4l-5 5a1 1 0 01-.7.3z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1rem;
+    appearance: none;
+    cursor: pointer;
+}
+
+.calculator-price input:focus,
+.calculator-price select:focus {
+    border-color: #f9aa33;
+}
+
+.calculator-price button {
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    margin-top: 25px;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.65), #FF9D00);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.calculator-price button:hover {
+    opacity: 0.9;
+}
+
+.price-result {
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center;
+    color: #7CFC00;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.iconPrice {
+    width: 25px;
+}
+
+.calculator-price * {
+    box-sizing: border-box;
+}
+
+.custom-tooltip-price {
+  position: relative;
+  display: inline-block;
+  margin-left: 6px;
+  width: 16px;
+  height: 16px;
+  background: #555;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.tooltip-text-price {
+  visibility: hidden;
+  width: max-content;
+  background-color: #707070;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.custom-tooltip-price:hover .tooltip-text-price {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-text-price::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}

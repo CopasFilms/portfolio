@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 import './Contact.css';
@@ -135,9 +135,6 @@ const Contact = () => {
                             </div>
                         </form>
                     </div>
-                </div>
-                <div className="footer-contact">
-                    <p>{texts.TitlePage_Footer}</p>
                 </div>
             </div>
         </section>

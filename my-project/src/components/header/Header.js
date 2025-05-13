@@ -2,36 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './header.css';
 import '../../index.css';
 import useTexts from '../../hooks/useTexts';
-
-const scrollToContact = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-        contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-};
-
-const scrollToHome = () => {
-    const homeSection = document.getElementById("home");
-    if (homeSection) {
-        homeSection.scrollIntoView({ behavior: "smooth" });
-    }
-};
-
-const scrollToProject = () => {
-    const projectSection = document.getElementById("projects");
-    if (projectSection) {
-        projectSection.scrollIntoView({ behavior: "smooth" });
-    }
-};
-
-const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about");
-    if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: "smooth" });
-    }
-};
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
+    const navigate = useNavigate();
     const texts = useTexts();
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -45,9 +19,28 @@ const Header = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const handleNavigation = (section) => {
+        const isOnHome = window.location.pathname === '/portfolio';
+        if (isOnHome) {
+            scrollToSection(section);
+        } else {
+            navigate('/', { state: { scrollTo: section } });
+        }
+    };
+
+    const scrollToSection = (section) => {
+        const sectionMap = {
+            about: 'about',
+            projects: 'projects',
+            contact: 'contact',
+        };
+        const el = document.getElementById(sectionMap[section]);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <header className="header">
-            <a href="#home" className="header-logo">Copas Film</a>
+            <a href="/portfolio" className="header-logo">Copas Films</a>
 
             {isMobile ? (
                 <>
@@ -57,17 +50,19 @@ const Header = () => {
                     <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
                         <ul>
                             <li>
-                                <button className="nav-option" onClick={() => { scrollToHome(); setMenuOpen(false); }}>
-                                    {texts.Home_Header}
-                                </button>
-                                <button className="nav-option" onClick={() => { scrollToAbout(); setMenuOpen(false); }}>
+                                <button className="nav-option" onClick={() => handleNavigation('about')}>
                                     {texts.About_Header}
                                 </button>
-                                <button className="nav-option" onClick={() => { scrollToProject(); setMenuOpen(false); }}>
-                                {texts.Project_Header}
+                                <button className="nav-option" onClick={() => handleNavigation('projects')}>
+                                    {texts.Project_Header}
                                 </button>
-                                <button className="nav-option" onClick={() => { scrollToContact(); setMenuOpen(false); }}>
-                                {texts.Contact_Header}
+                                <Link to="/price">
+                                    <button className="nav-option">
+                                        {texts.Price_Header}
+                                    </button>
+                                </Link>
+                                <button className="nav-option" onClick={() => handleNavigation('contact')}>
+                                    {texts.Contact_Header}
                                 </button>
                             </li>
                         </ul>
@@ -77,17 +72,19 @@ const Header = () => {
                 <nav>
                     <ul>
                         <li>
-                            <button className="nav-option" onClick={() => { scrollToHome(); setMenuOpen(false); }}>
-                            {texts.Home_Header}
+                            <button className="nav-option" onClick={() => handleNavigation('about')}>
+                                {texts.About_Header}
                             </button>
-                            <button className="nav-option" onClick={() => { scrollToAbout(); setMenuOpen(false); }}>
-                            {texts.About_Header}
+                            <button className="nav-option" onClick={() => handleNavigation('projects')}>
+                                {texts.Project_Header}
                             </button>
-                            <button className="nav-option" onClick={() => { scrollToProject(); setMenuOpen(false); }}>
-                            {texts.Project_Header}
-                            </button>
-                            <button className="nav-option" onClick={() => { scrollToContact(); setMenuOpen(false); }}>
-                            {texts.Contact_Header}
+                            <Link to="/price">
+                                <button className="nav-option">
+                                    {texts.Price_Header}
+                                </button>
+                            </Link>
+                            <button className="nav-option" onClick={() => handleNavigation('contact')}>
+                                {texts.Contact_Header}
                             </button>
                         </li>
                     </ul>
