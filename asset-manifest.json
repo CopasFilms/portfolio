@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.27285c94.css",
-    "main.js": "/portfolio/static/js/main.fa984f73.js",
+    "main.css": "/portfolio/static/css/main.ad482db7.css",
+    "main.js": "/portfolio/static/js/main.0691db47.js",
     "static/js/453.0a36081d.chunk.js": "/portfolio/static/js/453.0a36081d.chunk.js",
     "static/media/editTerror.mp4": "/portfolio/static/media/editTerror.3fb411a2c0f7dd6e4e54.mp4",
     "static/media/videoSpotlightProject.mp4": "/portfolio/static/media/videoSpotlightProject.3d673516421246472592.mp4",
@@ -10,18 +10,24 @@
     "static/media/imageIntro.png": "/portfolio/static/media/imageIntro.c8ae882752efa5565b55.png",
     "static/media/logoLoading.png": "/portfolio/static/media/logoLoading.767d22e843a2169c5e7d.png",
     "static/media/us.svg": "/portfolio/static/media/us.e53298ba37950ebf6bae7c5ae7b3f5a2.svg",
-    "static/media/SocialLinkedin.svg": "/portfolio/static/media/SocialLinkedin.c7bbab87c7feeae3108ed9d3525be4a1.svg",
+    "static/media/SocialLinkedin.svg": "/portfolio/static/media/SocialLinkedin.34eb34c3aa6918e685cef9c491abca19.svg",
+    "static/media/iconCalculatorPrice.svg": "/portfolio/static/media/iconCalculatorPrice.fbeda6ff124b5890b89a1650482c2831.svg",
     "static/media/br.svg": "/portfolio/static/media/br.050b74316b0da55026c0578e6cd7faa2.svg",
-    "static/media/SocialTiktok.svg": "/portfolio/static/media/SocialTiktok.0980125bbc42b8899fcd32c39b8023d2.svg",
-    "static/media/SocialYoutube.svg": "/portfolio/static/media/SocialYoutube.cc41018b4dc5fe7f02b3aa48a7821f63.svg",
-    "static/media/iconVideo.svg": "/portfolio/static/media/iconVideo.a1fa8520228ebdc5d44f693992e4ff9d.svg",
+    "static/media/SocialTiktok.svg": "/portfolio/static/media/SocialTiktok.575f18bf20edc21ca0cd4391292a07a8.svg",
+    "static/media/iconNivel2.svg": "/portfolio/static/media/iconNivel2.b477c4376ffa29388bf5f599932506d3.svg",
+    "static/media/SocialYoutube.svg": "/portfolio/static/media/SocialYoutube.311706f60fc9ee319d0295c092b57ed5.svg",
+    "static/media/iconLink.svg": "/portfolio/static/media/iconLink.e1804fea9403e990a74014507de57182.svg",
+    "static/media/iconVideo.svg": "/portfolio/static/media/iconVideo.bc075364ac997805ff72d516bb31a110.svg",
+    "static/media/iconNivel3.svg": "/portfolio/static/media/iconNivel3.930f29837ae10aa5e78b37a959085579.svg",
+    "static/media/iconCorrect.svg": "/portfolio/static/media/iconCorrect.6838e9e93c2be40f4eda385e4315e960.svg",
     "index.html": "/portfolio/index.html",
-    "main.27285c94.css.map": "/portfolio/static/css/main.27285c94.css.map",
-    "main.fa984f73.js.map": "/portfolio/static/js/main.fa984f73.js.map",
+    "static/media/iconNivel1.svg": "/portfolio/static/media/iconNivel1.97f1782ccf80533648794273450ffac8.svg",
+    "main.ad482db7.css.map": "/portfolio/static/css/main.ad482db7.css.map",
+    "main.0691db47.js.map": "/portfolio/static/js/main.0691db47.js.map",
     "453.0a36081d.chunk.js.map": "/portfolio/static/js/453.0a36081d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27285c94.css",
-    "static/js/main.fa984f73.js"
+    "static/css/main.ad482db7.css",
+    "static/js/main.0691db47.js"
   ]
 }
