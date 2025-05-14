@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d5c0363d.css",
-    "main.js": "/portfolio/static/js/main.0691db47.js",
+    "main.css": "/portfolio/static/css/main.d8673c48.css",
+    "main.js": "/portfolio/static/js/main.dfb736ac.js",
     "static/js/453.0a36081d.chunk.js": "/portfolio/static/js/453.0a36081d.chunk.js",
     "static/media/editTerror.mp4": "/portfolio/static/media/editTerror.3fb411a2c0f7dd6e4e54.mp4",
     "static/media/videoSpotlightProject.mp4": "/portfolio/static/media/videoSpotlightProject.3d673516421246472592.mp4",
@@ -16,18 +16,17 @@
     "static/media/SocialTiktok.svg": "/portfolio/static/media/SocialTiktok.575f18bf20edc21ca0cd4391292a07a8.svg",
     "static/media/iconNivel2.svg": "/portfolio/static/media/iconNivel2.b477c4376ffa29388bf5f599932506d3.svg",
     "static/media/SocialYoutube.svg": "/portfolio/static/media/SocialYoutube.311706f60fc9ee319d0295c092b57ed5.svg",
-    "static/media/iconLink.svg": "/portfolio/static/media/iconLink.e1804fea9403e990a74014507de57182.svg",
     "static/media/iconVideo.svg": "/portfolio/static/media/iconVideo.bc075364ac997805ff72d516bb31a110.svg",
     "static/media/iconNivel3.svg": "/portfolio/static/media/iconNivel3.930f29837ae10aa5e78b37a959085579.svg",
     "static/media/iconCorrect.svg": "/portfolio/static/media/iconCorrect.6838e9e93c2be40f4eda385e4315e960.svg",
     "index.html": "/portfolio/index.html",
     "static/media/iconNivel1.svg": "/portfolio/static/media/iconNivel1.97f1782ccf80533648794273450ffac8.svg",
-    "main.d5c0363d.css.map": "/portfolio/static/css/main.d5c0363d.css.map",
-    "main.0691db47.js.map": "/portfolio/static/js/main.0691db47.js.map",
+    "main.d8673c48.css.map": "/portfolio/static/css/main.d8673c48.css.map",
+    "main.dfb736ac.js.map": "/portfolio/static/js/main.dfb736ac.js.map",
     "453.0a36081d.chunk.js.map": "/portfolio/static/js/453.0a36081d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5c0363d.css",
-    "static/js/main.0691db47.js"
+    "static/css/main.d8673c48.css",
+    "static/js/main.dfb736ac.js"
   ]
 }
