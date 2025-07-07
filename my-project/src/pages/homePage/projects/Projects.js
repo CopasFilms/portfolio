@@ -4,9 +4,12 @@ import Divider from '../../../components/divider/Divider';
 import useTexts from '../../../hooks/useTexts';
 import { X } from 'lucide-react';
 
-import clipe01 from '../../../assets/video/projects/editTerror.mp4';
-import clipe02 from '../../../assets/video/projects/editTiktok.mp4';
-import clipe03 from '../../../assets/video/videoSpotlightProject.mp4';
+import clipe01 from '../../../assets/video/projects/edit01.mp4';
+import clipe02 from '../../../assets/video/projects/edit02.mp4';
+import clipe03 from '../../../assets/video/projects/edit03.mp4';
+import clipe04 from '../../../assets/video/projects/edit04.mp4';
+import clipe05 from '../../../assets/video/projects/edit05.mp4';
+import clipe06 from '../../../assets/video/projects/edit06.mp4';
 
 const Projects = () => {
   const texts = useTexts();
@@ -17,12 +20,12 @@ const Projects = () => {
   const videoRef = useRef(null);
 
   const videoData = [
-    { src: clipe01, title: texts.TitleVideoClip_Vlog_Projects },
-    { src: clipe02, title: texts.TitleVideoClip_Documentary_Projects },
-    { src: clipe03, title: texts.TitleVideoClip_Short_Projects },
-    { src: clipe02, title: texts.TitleVideoClip_Cinematic_Projects },
-    { src: clipe01, title: texts.TitleVideoClip_Tiktok_Projects },
-    { src: clipe02, title: texts.TitleVideoClip_Edit_Projects },
+    { src: clipe01, title: texts.TitleVideoClip_Edit_Projects },
+    { src: clipe02, title: texts.TitleVideoClip_Tiktok_Projects },
+    { src: clipe03, title: texts.TitleVideoClip_Tiktok_Projects },
+    { src: clipe04, title: texts.TitleVideoClip_Cinematic_Projects },
+    { src: clipe05, title: texts.TitleVideoClip_Edit_Projects },
+    { src: clipe06, title: texts.TitleVideoClip_Podcast_Projects },
   ];
 
   useEffect(() => {
