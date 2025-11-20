@@ -37,10 +37,7 @@
     align-items: center;
     background-color: #1b1b1b;
     padding: 20px 10px;
-    border: solid 1px #313131;
     border-radius: 16px;
-    margin-bottom: 40px;
-    margin-top: 30px;
 }
 
 .descriptionForm-price {
@@ -135,6 +132,13 @@
     text-align: left;
 }
 
+.panel-table-price {
+    display: flex;
+    gap: 25px;
+    flex-direction: row-reverse;
+    margin-top: 35px;
+}
+
 .iconComplexity-price {
     width: 30px;
     margin: 10px;
@@ -193,6 +197,13 @@
 
     .textObservation-price {
         font-size: 12px;
+    }
+
+    .panel-table-price {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        margin-top: 35px;
     }
 
     .panelComplexity-price {
